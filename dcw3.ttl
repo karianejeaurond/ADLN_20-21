@@ -13,6 +13,16 @@ dcw3:Saison a rdfs:Class ;
     rdfs:label "Saison" ;
     rdfs:domain o:Resource .
 
-dcw3:name a rdf:Property ;
-    rdfs:label "name" ;
+dcw3:Character a rdfs:Class ;
+    rdfs:label "Character" ;
     rdfs:domain o:Resource .
+
+dcw3:Events a rdfs:Class ;
+    rdfs:label "Characteristics" ;
+    rdfs:domain o:Resource .
+    
+dcw3:ID_Characteristic a rdf:Property ;
+    rdfs:label "ID Characteristic" ;
+    rdfs:domain o:Resource .
+
+
