@@ -3,30 +3,169 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix o: <http://omeka.org/s/vocabs/o#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix dcw2: <http://lire-ensemble.univ-paris8.fr/DigitalCreationWorkshop/vocab2#> .
+@prefix dcw3: <http://lire-ensemble.univ-paris8.fr/DigitalCreationWorkshop/vocab3#> .
 
 
-<http://lire-ensemble.univ-paris8.fr/DigitalCreationWorkshop/vocab2#> a owl:Ontology ;
-    dcterms:title "Digital Creation Workshop - Group 2" .
+<http://lire-ensemble.univ-paris8.fr/DigitalCreationWorkshop/vocab3#> a owl:Ontology ;
+    dcterms:Title "Digital Creation Workshop - Group 3" .
 
-dcw3:Saison a rdfs:Class ;
-    rdfs:label "Saison" ;
-    rdfs:domain o:Resource .
+dcw3:Predator a rdfs:Class ;
+    rdfs:Label "Predator" ;
+    rdfs:Domain o:Resource .
 
-dcw3:name a rdf:Property ;
-    rdfs:label "name" ;
-    rdfs:domain o:Resource .
+dcw3:IDP_C a rdf:Property ;
+    rdfs:Label "IDP_C" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Prey a rdf:Property ;
+    rdfs:Label "Prey" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Location a rdfs:Class ;
+    rdfs:Label "Location" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID-L a rdf:Property ;
+    rdfs:Label "ID-L" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Character a rdfs:Class ;
+    rdfs:Label "Character" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID_C a rdf:Property ;
+    rdfs:Label "ID_C" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Alive a rdf:Property ;
+    rdfs:Label "Alive" ;
+    rdfs:Domain o:Resource .
+
+dcw3: Wound a rdf:Property ;
+    rdfs:Label "Wound" ;
+    rdfs:Domain o:Resource .
+
+dcw3:KfC_L a rdf:Property ;
+    rdfs:Label "KfC_L" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Characteristic a rdfs:Class ;
+    rdfs:Label "Characteristic" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID_CH a rdf:Property ;
+    rdfs:Label "ID_CH" ;
+    rdfs:Domain o:Resource .
+
+dcw3:KfCH_L a rdf:Property ;
+    rdfs:Label "KfCH_L" ;
+    rdfs:Domain o:Resource .
+
+dcw3:KfCH_S a rdf:Property ;
+    rdfs:Label "KfCH_S" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Value a rdf:Property ;
+    rdfs:Label "Value" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Season a rdfs:Class ;
+    rdfs:Label "Season" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID_S a rdf:Property ;
+    rdfs:Label "ID_S" ;
+    rdfs:Domain o:Resource .
 
 dcw3:Appearance a rdfs:Class ;
-    rdfs:label "Appearance" ;
-    rdfs:domain o:Resource .
+    rdfs:Label "Appearance" ;
+    rdfs:Domain o:Resource .
 
-dcw3:of_character a rdf:Property ;
-    rdfs:label "of character" ;
-    rdfs:domain o:Resource .
+dcw3:ID_A a rdf:Property ;
+    rdfs:Label "ID_A" ;
+    rdfs:Domain o:Resource .
 
-dcw3:for_saison a rdf:Property ;
-    rdfs:label "for saison" ;
-    rdfs:domain o:Resource .
+dcw3:KfA_S a rdf:Property ;
+    rdfs:Label "KfA_S" ;
+    rdfs:Domain o:Resource .
+
+dcw3:KfA_C a rdf:Property ;
+    rdfs:Label "KfA_C" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Value a rdf:Property ;
+    rdfs:Label "Value" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Information a rdfs:Class ;
+    rdfs:Label "Information" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID_I a rdf:Property ;
+    rdfs:Label "ID_I" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Concern_entity a rdf:Property ;
+    rdfs:Label "Concern_entity" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Concern_item a rdf:Property ;
+    rdfs:Label "Concern_item" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Subject a rdf:Property ;
+    rdfs:Label "Subject" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Media a rdfs:Class ;
+    rdfs:Label "Media" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID_M a rdf:Property ;
+    rdfs:Label "ID_M" ;
+    rdfs:Domain o:Resource .
+
+dcw3:KfM_I a rdf:Property ;
+    rdfs:Label "KfM_I" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Value a rdf:Property ;
+    rdfs:Label "Vallue" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Used a rdf:Property ;
+    rdfs:Label "Used" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Event a rdfs:Class ;
+    rdfs:Label "Event" ;
+    rdfs:Domain o:Resource .
+
+dcw3:ID-E a rdf:Property ;
+    rdfs:Label "ID-E" ;
+    rdfs:Domain o:Resource .
 
 
+dcw3:Name a rdf:Property ;
+    rdfs:Label "Name" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Heuristics a rdf:Property ;
+    rdfs:Label "Heuristics" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Class a rdf:Property ;
+    rdfs:Label "Class" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Function a rdf:Property ;
+    rdfs:Label "Function" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Requirements a rdf:Property ;
+    rdfs:Label "Requirements" ;
+    rdfs:Domain o:Resource .
+
+dcw3:Final_state a rdf:Property ;
+    rdfs:Label "Final_state" ;
+    rdfs:Domain o:Resource .
